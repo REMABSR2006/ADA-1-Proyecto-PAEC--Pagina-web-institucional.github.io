@@ -101,8 +101,73 @@ body {
     color: black;
     font-size: 20px;
     text-align: justify;
-    width: 1000px;           
+    width: 800px;           
     margin: 50px auto ;      
     padding: 100px;          
-  font-weight: 
+  font-weight: ;
+   background: rgba(255, 255, 255, 0.6); s
+    border-radius: 15px;
+      border: 8px double goldenrod;
+    border-radius: 8px;
+
+}
+/* 📱 AJUSTES PARA CELULAR */
+@media (max-width: 768px) {
+
+    body {
+        text-align: left;
+    }
+
+    /* Encabezado */
+    #encabezado {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    #encabezado h1 {
+        font-size: 18px;
+    }
+
+    #encabezado img {
+        width: 80px;
+        height: auto;
+    }
+
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+  
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+   
+    .texto {
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+        font-size: 18px;
+    }
+
+    .texto h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+  
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Tabla */
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
 }

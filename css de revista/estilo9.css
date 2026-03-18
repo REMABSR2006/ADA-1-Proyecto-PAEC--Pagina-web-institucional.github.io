@@ -12,8 +12,8 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    /* Permalink - use to edit and share this gradient. Enlace permanente - úsalo para editar y compartir este gradiente: https://colorzilla.com/gradient-editor/#c07b90+0,9c1945+54,9c1945+100 */
-    background: linear-gradient(to bottom,  rgb(192,123,144) 0%,rgb(156,25,69) 54%,rgb(156,25,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    background: linear-gradient(to bottom,  rgb(192,123,144) 0%,rgb(156,25,69) 54%,rgb(156,25,69) 100%);
     padding: 15px 30px;
     color: white;
     border: 10px double #D3A653;
@@ -42,15 +42,13 @@ body {
     color: black;
     font-size: 28px;
     text-align: justify;
-    width: 900px;           
+    width: 1000px;           
     margin: 50px auto ;      
     padding: 100px;          
   font-weight: bold;
-   background: rgba(255, 255, 255, 0.6); s
-    border-radius: 15px;
-      border: 8px double goldenrod;
-   
+ 
 }
+
 
 .contenedor {
     display: flex;
@@ -60,8 +58,8 @@ body {
 /* SIDEBAR */
 .sidebar {
     width: 250px;
-    /* Permalink - use to edit and share this gradient. Enlace permanente - úsalo para editar y compartir este gradiente: https://colorzilla.com/gradient-editor/#bf798e+0,9c1945+7,9c1945+93,bf798e+100 */
-    background: linear-gradient(to right,  rgb(191,121,142) 0%,rgb(156,25,69) 7%,rgb(156,25,69) 93%,rgb(191,121,142) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+    background: linear-gradient(to right,  rgb(191,121,142) 0%,rgb(156,25,69) 7%,rgb(156,25,69) 93%,rgb(191,121,142) 100%); 
     padding: 20px;
     border: 10px double #D3A653;
     border-radius: 10px;
@@ -125,57 +123,6 @@ font-family:arial;
 font-size: 20px;
 }
 
-/* CARRUSEL */
-.carrusel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
-    margin:  auto;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
-}
-
-.contenedorFOTO {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-fit: contain;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-.slide.active {
-    opacity: 1;
-}
-
-/* BOTONES */
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-.prev:hover, .next:hover {
-    background: rgba(0,0,0,0.8);
-}
 
 /*  AJUSTES PARA CELULAR */
 
@@ -202,18 +149,17 @@ font-size: 20px;
         height: auto;
     }
 
-    /* Contenedor */
+ 
     .contenedor {
         flex-direction: column;
     }
 
-    /* Sidebar */
+   
     .sidebar {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    /* Texto principal */
     .texto {
         width: 95%;
         padding: 20px;
@@ -226,13 +172,13 @@ font-size: 20px;
         text-align: center;
     }
 
-    /* Imagen final */
+
     img {
         max-width: 100%;
         height: auto;
     }
 
-    /* Tabla */
+
     table {
         width: 100%;
         font-size: 14px;
