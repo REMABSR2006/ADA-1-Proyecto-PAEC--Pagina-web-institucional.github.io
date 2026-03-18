@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+    background-image: url("fondo.png");
+    font-family: Britannic Bold, sans-serif;
+}
+
+/* ENCABEZADO */
+#encabezado {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Permalink - use to edit and share this gradient. Enlace permanente - úsalo para editar y compartir este gradiente: https://colorzilla.com/gradient-editor/#c07b90+0,9c1945+54,9c1945+100 */
+    background: linear-gradient(to bottom,  rgb(192,123,144) 0%,rgb(156,25,69) 54%,rgb(156,25,69) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 15px 30px;
+    color: white;
+    border: 10px double #D3A653;
+    border-radius: 8px;
+}
+
+#encabezado h1 {
+    font-size: 40px;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 250px;
+    /* Permalink - use to edit and share this gradient. Enlace permanente - úsalo para editar y compartir este gradiente: https://colorzilla.com/gradient-editor/#bf798e+0,9c1945+7,9c1945+93,bf798e+100 */
+    background: linear-gradient(to right,  rgb(191,121,142) 0%,rgb(156,25,69) 7%,rgb(156,25,69) 93%,rgb(191,121,142) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding: 20px;
+    border: 10px double #D3A653;
+    border-radius: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 5px double #D3A653;
+}
+
+.sidebar a:hover {
+    background-color: #B44E72;
+}
+
+.menu {
+    color: #FFF;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* SUBMENÚ */
+.premenu li {
+    position: relative;
+}
+
+.premenu li ul {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(10px);
+    transition: 0.3s ease;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 200px;
+    background: #9C1945;
+}
+
+.premenu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.premenu li ul li ul {
+    left: -200px;
+    top: 0;
+}
+
+.texto h2{
+    font-size: 50px;
+    font-family: arial;
+}
+
+.texto {
+    flex 1;
+    color: black;
+    font-size: 20px;
+    text-align: justify;
+    width: 1000px;           
+    margin: 50px auto ;      
+    padding: 100px;          
+  font-weight: 
+}
